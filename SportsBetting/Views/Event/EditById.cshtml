@@ -1,0 +1,37 @@
+﻿@model EventViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+<form method="post">
+    <div
+    <label asp-for="EventName"></label>
+    <input asp-for="EventName" />
+    </div>
+    <br />
+    
+    <div
+        <label asp-for="OddsForFirstTeam">Odds For First Team</label>
+        <input asp-for="OddsForFirstTeam" />
+    </div>
+    <br />
+
+    <div
+        <label asp-for="OddsForDraw">Odds For Draw</label>
+        <input asp-for="OddsForDraw" />
+    </div>
+    <br />
+
+    <div
+        <label asp-for="OddsForSecondTeam">Odds For Second Team</label>
+        <input asp-for="OddsForSecondTeam" />
+    </div>
+    <br />
+
+    <div
+    <label asp-for="EventStartDate"></label>
+    <input class="form-control" asp-for="EventStartDate" asp-format="{0:yyyy-MM-ddTHH:mm}" />
+    </div>
+    <br />
+
+    <input type="submit" value="Save" />
+</form>

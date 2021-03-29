@@ -1,0 +1,12 @@
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\bin\Debug\netcoreapp3.1\SportsBetting.Services.deps.json
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\bin\Debug\netcoreapp3.1\SportsBetting.Services.dll
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\bin\Debug\netcoreapp3.1\SportsBetting.Services.pdb
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\bin\Debug\netcoreapp3.1\SportsBetting.Data.dll
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\bin\Debug\netcoreapp3.1\SportsBetting.Data.pdb
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\obj\Debug\netcoreapp3.1\SportsBetting.Services.csprojAssemblyReference.cache
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\obj\Debug\netcoreapp3.1\SportsBetting.Services.AssemblyInfoInputs.cache
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\obj\Debug\netcoreapp3.1\SportsBetting.Services.AssemblyInfo.cs
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\obj\Debug\netcoreapp3.1\SportsBetting.Services.csproj.CoreCompileInputs.cache
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\obj\Debug\netcoreapp3.1\SportsBetting.Services.csproj.CopyComplete
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\obj\Debug\netcoreapp3.1\SportsBetting.Services.dll
+C:\Users\adida\source\repos\SportsBetting\SportsBetting.Services\obj\Debug\netcoreapp3.1\SportsBetting.Services.pdb

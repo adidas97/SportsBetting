@@ -1,0 +1,69 @@
+﻿@using SportsBetting.Data.Models
+@model List<Event>
+@{
+    ViewData["Title"] = "Edit Mode";
+}
+<a asp-action="PreviewMode"><button style="position:absolute;top:10px;right:120px;">Preview Mode</button></a>
+
+<form asp-action="CreateEvent" method="post">
+    <button style="position:absolute;top:10px;left:60px;">Add New Event</button>
+</form>
+<br />
+<br />
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr style="text-align:center">
+            <th>
+                EventID
+            </th>
+            <th>
+                EventName
+            </th>
+            <th>
+                OddsForFirstTeam
+            </th>
+            <th>
+                OddsForDraw
+            </th>
+            <th>
+                OddsForSecondTeam
+            </th>
+            <th>
+                EventStartDate
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{
+            foreach (var item in Model)
+            {
+                <tr style="text-align:center">
+                    <th>
+                        @item.EventId
+                    </th>
+                    <th>
+                        @item.EventName
+                    </th>
+                    <th>
+                        @item.OddsForFirstTeam
+                    </th>
+                    <th>
+                        @item.OddsForDraw
+                    </th>
+                    <th>
+                        @item.OddsForSecondTeam
+                    </th>
+
+                    <th>
+                        @item.EventStartDate
+                    </th>
+                    <th>
+                        <a href="/event/editbyid/@item.EventId" class="btn-warning">Edit</a>
+                        <a href="/event/destroy/@item.EventId" class="btn-danger">Delete</a>
+                    </th>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

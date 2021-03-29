@@ -1,0 +1,105 @@
+﻿@using SportsBetting.Data.Models
+@model List<Event>
+@{
+    ViewData["Title"] = "Preview Mode";
+}
+<a asp-action="EditMode"><button style="position:absolute;top:10px;right:120px;">Edit Mode</button></a>
+<br />
+<br />
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr style="text-align:center">
+            <th>
+                EventName
+            </th>
+            <th>
+                OddsForFirstTeam
+            </th>
+            <th>
+                OddsForDraw
+            </th>
+            <th>
+                OddsForSecondTeam
+            </th>
+            <th>
+                EventStartDate
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{ 
+            int count = 1;
+            foreach (var item in Model)
+            {
+                if (item.EventStartDate < DateTime.Now)
+                {
+                <tr style="background-color:lightsalmon ; text-align:center">
+                    <th>
+                        @item.EventName
+                    </th>
+                    <th>
+                        @item.OddsForFirstTeam
+                    </th>
+                    <th>
+                        @item.OddsForDraw
+                    </th>
+                    <th>
+                        @item.OddsForSecondTeam
+                    </th>
+
+                    <th>
+                        @item.EventStartDate
+                    </th>
+
+                </tr>
+                }
+                else if (count % 2 == 0)
+                { 
+                <tr style="background-color:honeydew ; text-align:center">
+                    <th>
+                        @item.EventName
+                    </th>
+                    <th>
+                        @item.OddsForFirstTeam
+                    </th>
+                    <th>
+                        @item.OddsForDraw
+                    </th>
+                    <th>
+                        @item.OddsForSecondTeam
+                    </th>
+
+                    <th>
+                        @item.EventStartDate
+                    </th>
+
+                </tr>
+                }
+                else
+                {
+                <tr style="background-color:aliceblue ; text-align:center">
+                    <th>
+                        @item.EventName
+                    </th>
+                    <th>
+                        @item.OddsForFirstTeam
+                    </th>
+                    <th>
+                        @item.OddsForDraw
+                    </th>
+                    <th>
+                        @item.OddsForSecondTeam
+                    </th>
+
+                    <th>
+                        @item.EventStartDate
+                    </th>
+
+                </tr>
+                }
+                count++;
+            }
+          }
+    </tbody>
+</table>
